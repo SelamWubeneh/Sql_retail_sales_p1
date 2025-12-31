@@ -40,11 +40,9 @@ CREATE TABLE retail_sales
 		total_sale FLOAT
 );
 
-ALTER TABLE retail_sales
-RENAME COLUMN quantiy TO QUANTITY;
 
 ```
-
+-**Table alteration: Identify and fix any issues in the table creation.
 - **Record Count**: Determine the total number of records in the dataset.
 - **Customer Count**: Find out how many unique customers are in the dataset.
 - **Category Count**: Identify all unique product categories in the dataset.
@@ -52,6 +50,9 @@ RENAME COLUMN quantiy TO QUANTITY;
 
 
 ```sql
+ALTER TABLE retail_sales
+RENAME COLUMN quantiy TO QUANTITY;
+
 SELECT COUNT(*)
 FROM retail_sales;
 
